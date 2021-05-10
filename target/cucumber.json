@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-10T21:43:43.642Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3878000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "login with valid email and passwod",
+        "description": "",
+        "id": "login;login-with-valid-email-and-passwod",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 40000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am at orangeHRM",
+            "match": {
+              "location": "stepDefinition.login_step.iAmAtOrangeHRM()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 219000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I input valid ID and password",
+            "match": {
+              "location": "stepDefinition.login_step.iInputValidIDAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1125000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click longin button",
+            "match": {
+              "location": "stepDefinition.login_step.iClickLonginButton()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/FeatureFile/login.feature",
+    "tags": []
+  }
+]
