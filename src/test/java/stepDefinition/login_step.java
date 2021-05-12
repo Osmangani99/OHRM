@@ -15,15 +15,39 @@ public class login_step extends config { login_page login = new login_page(drive
 
     @And("I input valid ID and password")
     public void iInputValidIDAndPassword() {
-        login.enter_userName("Admin");
-        login.enter_password("admin123");
+//        login.enter_userName("Admin");
+//        login.enter_password("admin123")
+        login.enter_credential("Admin","admin123");
         
     }
 
     @Then("I click longin button")
     public void iClickLonginButton() {
 
-        login.click_loginButton();
+        login.click();
 
     }
+
+    @And("I click facebook logo from the footer of the page")
+    public void iClickFacebookLogoFromTheFooterOfThePage() {
+
+        login.click_faceBook();
+    }
+
+    @And("I click linkedIn logo from the footer of the page")
+    public void iClickLinkedInLogoFromTheFooterOfThePage() {
+        login.click_linkedIn();
+    }
+
+    @And("I click YouTube logo from the footer of the page")
+    public void iClickYouTubeLogoFromTheFooterOfThePage() {
+        login.click_youTube();
+    }
+
+    @And("I click twitter logo from the footer of the page")
+    public void iClickTwitterLogoFromTheFooterOfThePage() {
+        login.click_twitter();
+    }
+
+
 }
