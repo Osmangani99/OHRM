@@ -4,12 +4,15 @@ import base.config;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.testng.Assert;
 import pageObject.login_page;
 
 public class login_step extends config { login_page login = new login_page(driver);
 
     @Given("I am at orangeHRM")
     public void iAmAtOrangeHRM() {
+
+
 
     }
 
@@ -49,5 +52,10 @@ public class login_step extends config { login_page login = new login_page(drive
         login.click_twitter();
     }
 
+
+    @And("I verify there is placeHolder for userName and Password")
+    public void iVerifyThereIsPlaceHolderForUserNameAndPassword() {
+        login.verify_placeHolder();
+    }
 
 }

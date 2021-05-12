@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Nike</artifactId>
+    <artifactId>OHRM</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Nike</name>
+    <name>OHRM</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -79,7 +79,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>Nike</projectName>
+                            <projectName>OHRM</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
                         </configuration>
                     </execution>

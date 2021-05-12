@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-05-12T01:13:48.024Z",
+        "start_timestamp": "2021-05-12T02:08:07.907Z",
         "before": [
           {
             "result": {
-              "duration": 2759000000,
+              "duration": 2823000000,
               "status": "passed"
             },
             "match": {
@@ -15,77 +15,19 @@
             }
           }
         ],
-        "line": 2,
-        "name": "login with valid email and passwod",
+        "line": 4,
+        "name": "verify place holder for userName and Password",
         "description": "",
-        "id": "login;login-with-valid-email-and-passwod",
+        "id": "login;verify-place-holder-for-username-and-password",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 22000000,
-              "status": "passed"
-            },
-            "line": 3,
-            "name": "I am at orangeHRM",
-            "match": {
-              "location": "stepDefinition.login_step.iAmAtOrangeHRM()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 179000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "I input valid ID and password",
-            "match": {
-              "location": "stepDefinition.login_step.iInputValidIDAndPassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1059000000,
+              "duration": 27000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "I click longin button",
-            "match": {
-              "location": "stepDefinition.login_step.iClickLonginButton()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-12T01:13:52.072Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1997000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinition.hook.openBrowser()"
-            }
-          }
-        ],
-        "line": 7,
-        "name": "login with thirdParty application",
-        "description": "",
-        "id": "login;login-with-thirdparty-application",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 8,
             "name": "I am at orangeHRM",
             "match": {
               "location": "stepDefinition.login_step.iAmAtOrangeHRM()"
@@ -97,7 +39,119 @@
               "duration": 76000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 6,
+            "name": "I verify there is placeHolder for userName and Password",
+            "match": {
+              "location": "stepDefinition.login_step.iVerifyThereIsPlaceHolderForUserNameAndPassword()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginPlaceHolder"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-12T02:08:10.854Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2041000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "login with valid email and passwod",
+        "description": "",
+        "id": "login;login-with-valid-email-and-passwod",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am at orangeHRM",
+            "match": {
+              "location": "stepDefinition.login_step.iAmAtOrangeHRM()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 166000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I input valid ID and password",
+            "match": {
+              "location": "stepDefinition.login_step.iInputValidIDAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 985000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click longin button",
+            "match": {
+              "location": "stepDefinition.login_step.iClickLonginButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-12T02:08:14.051Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2025000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "login with thirdParty application",
+        "description": "",
+        "id": "login;login-with-thirdparty-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am at orangeHRM",
+            "match": {
+              "location": "stepDefinition.login_step.iAmAtOrangeHRM()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 96000000,
+              "status": "passed"
+            },
+            "line": 17,
             "name": "I click facebook logo from the footer of the page",
             "match": {
               "location": "stepDefinition.login_step.iClickFacebookLogoFromTheFooterOfThePage()"
@@ -106,10 +160,10 @@
           },
           {
             "result": {
-              "duration": 71000000,
+              "duration": 93000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 18,
             "name": "I click linkedIn logo from the footer of the page",
             "match": {
               "location": "stepDefinition.login_step.iClickLinkedInLogoFromTheFooterOfThePage()"
@@ -118,10 +172,10 @@
           },
           {
             "result": {
-              "duration": 84000000,
+              "duration": 94000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 19,
             "name": "I click YouTube logo from the footer of the page",
             "match": {
               "location": "stepDefinition.login_step.iClickYouTubeLogoFromTheFooterOfThePage()"
@@ -130,15 +184,20 @@
           },
           {
             "result": {
-              "duration": 82000000,
+              "duration": 89000000,
               "status": "passed"
             },
-            "line": 12,
+            "line": 20,
             "name": "I click twitter logo from the footer of the page",
             "match": {
               "location": "stepDefinition.login_step.iClickTwitterLogoFromTheFooterOfThePage()"
             },
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login3rdApps"
           }
         ]
       }

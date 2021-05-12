@@ -45,6 +45,17 @@ public class login_page extends config {
 //    public void enter_password(String Input_password){
 //        password.sendKeys(Input_password); }
 
+
+    public void verify_placeHolder(){
+
+        String userAttribute = userName.getAttribute("name");
+        System.out.println("Here is the placeHolder for userName==============>" + userAttribute);
+
+       String passwordAttribute =  password.getAttribute("name");
+       System.out.println("Here is the placeHolder for password ================>"+passwordAttribute);
+
+    }
+
     public void enter_credential(String Input_userName, String Input_password) {
 
         userName.sendKeys(Input_userName);
