@@ -48,9 +48,17 @@ public class login_page extends config {
 
     public void verify_placeHolder(){
 
+        // verify user name place holder
+        boolean userNamePlaceHolder = userName.isDisplayed();
+        System.out.println("The place holder for name is displayed =============>>"+userNamePlaceHolder);
         String userAttribute = userName.getAttribute("name");
         System.out.println("Here is the placeHolder for userName==============>" + userAttribute);
 
+
+        // verify password place holder
+
+       boolean passwordPlaceHolder =  password.isDisplayed();
+       System.out.println("The place holder for password is displayed============>>"+passwordPlaceHolder);
        String passwordAttribute =  password.getAttribute("name");
        System.out.println("Here is the placeHolder for password ================>"+passwordAttribute);
 
@@ -78,11 +86,6 @@ public class login_page extends config {
 
     public void click_faceBook() {
         faceBook_login_Option.click(); }
-
-
-
-
-
 
 
 

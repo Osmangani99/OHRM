@@ -12,6 +12,11 @@ public class login_step extends config { login_page login = new login_page(drive
     @Given("I am at orangeHRM")
     public void iAmAtOrangeHRM() {
 
+        String Actual_Title = driver.getTitle();
+        System.out.println("This is the title I have when I land in the page==============>>>>>"+ Actual_Title);
+        String  expected_Title = "OrangeHRM";
+
+        Assert.assertEquals(Actual_Title,expected_Title);
 
 
     }
